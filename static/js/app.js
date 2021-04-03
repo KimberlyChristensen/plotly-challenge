@@ -3,7 +3,7 @@
 
 function init() {
 
-    d3.json('/data/samples.json').then(data => {
+    d3.json('data/samples.json').then(data => {
         var name = data.names;
         var dropdownMenu = d3.select("#selDataset");
         // var selectedName = dropdownMenu.node().value.toString() == "940";
@@ -26,7 +26,7 @@ function init() {
 
 function showCharts(selectedName) {
     // Use D3 to select the dropdown menu
-    d3.json('/data/samples.json').then(data => {
+    d3.json('data/samples.json').then(data => {
         //Fill in the metadata
         var name = data.names;
         var metadata = data.metadata;
