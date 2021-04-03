@@ -3,7 +3,6 @@
 
 function init() {
 
-    // d3.json('https://raw.githubusercontent.com/KimberlyChristensen/plotly-challenge/main/data/samples.json').then(data => {
     d3.json('data/samples.json').then(data => {
         var name = data.names;
         var dropdownMenu = d3.select("#selDataset");
@@ -27,7 +26,6 @@ function init() {
 
 function showCharts(selectedName) {
     // Use D3 to select the dropdown menu
-    // d3.json('https://raw.githubusercontent.com/KimberlyChristensen/plotly-challenge/main/data/samples.json').then(data => {
     d3.json('data/samples.json').then(data => {
         //Fill in the metadata
         var name = data.names;
